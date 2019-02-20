@@ -1,0 +1,430 @@
+
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('../fonts/opensanssemibold/opensans-semibold.eot');
+  src: url('../fonts/opensanssemibold/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensanssemibold/opensans-semibold.woff') format('woff'),
+       url('../fonts/opensanssemibold/opensans-semibold.ttf') format('truetype'),
+       url('../fonts/opensanssemibold/opensans-semibold.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'open_regular';
+  src: url('../fonts/opensansregular/opensans-regular.eot');
+  src: url('../fonts/opensansregular/opensans-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensansregular/opensans-regular.woff') format('woff'),
+       url('../fonts/opensansregular/opensans-regular.ttf') format('truetype'),
+       url('../fonts/opensansregular/opensans-regular.svg#opensans-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensansbold/opensans-bold.eot');
+  src: url('../fonts/opensansbold/opensans-bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensansbold/opensans-bold.woff') format('woff'),
+       url('../fonts/opensansbold/opensans-bold.ttf') format('truetype'),
+       url('../fonts/opensansbold/opensans-bold.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+font-family: 'Impact';
+src: url('../fonts/Impact/Impact.eot?#iefix') format('embedded-opentype'), 
+ url('../fonts/Impact/Impact.woff') format('woff'),
+  url('../fonts/Impact/Impact.ttf')  format('truetype'),
+ url('../fonts/Impact/Impact.svg#Impact') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+$primary-Background-Color:#e2e2e2;
+$primary-Text-Color:#231f20;
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  
+  .App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-title {
+    font-size: 1.5em;
+  }
+  
+  .App-intro {
+    font-size: large;
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  body{
+    background: $primary-Background-Color; 
+    font-family: 'open_regular';
+  }
+
+  html {
+    font-family: 'open_regular', 'Impact';
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+  }
+
+  body, h1, h2, h3, h4, h5, h6 {
+    font-size: 13px;
+    margin: 0px;
+    line-height: 24px;
+  }
+
+  button{
+    border-width: 0px;
+  }
+
+  .inputControl{
+    font-size: 12pt;
+    width: 100%;
+  }
+
+  FormLabel{
+    font-size: 14px;
+  }
+
+  .logo{
+    float:left; 
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .recaptcha {
+    transform:scale(1.0) !important;
+    -webkit-transform:scale(1.0) !important;
+    transform-origin:0 0 !important;
+    -webkit-transform-origin:0 0 !important;
+  }
+
+  .titleLabel{
+    font-family: 'open_sansbold';
+    color: $primary-Text-Color;
+    padding-bottom: 10px;
+    font-size: 17px;
+    margin-top: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .appTitleLabel{
+    font-family: 'open_sansbold';
+    color: $primary-Text-Color;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-top: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .appDescriptionLabel{
+    font-family: 'open_regular';
+    color: 'grey';
+    padding-bottom: 10px;
+    font-size: 12px;
+    margin-top: 0%;
+    text-align: left;
+  }
+
+  .controlLabel{
+    color: $primary-Text-Color;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .pageContainer{
+    min-width: 320px;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+  }
+
+  .loginPageContainer{
+    min-width: 320px;
+    max-width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .pagePaper{
+    background: #ffffff;
+    padding: 20px 25px;
+    margin: 0px;
+    overflow: auto;
+    border-radius: 1px;
+    box-shadow: 0 0 6px #cccccc;
+  }
+
+  .formContent{
+    float: left;
+    padding-top: 0%;
+    width: 100%;
+  }
+
+  .formGroup{
+    margin-bottom: 10px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 5px 10px;
+  }
+
+  /* The container */
+.checkBoxContainer {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 18px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkBoxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  margin: 0px 12px;
+  border: solid rgb(98, 98, 98);
+  border-width: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkBoxContainer:hover input ~ .checkmark {
+    border: solid rgb(98, 98, 98);
+    border-width: 2px;
+    background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkBoxContainer input:checked ~ .checkmark {
+  background-color: rgb(38, 165, 238);
+  border: solid rgb(38, 165, 238);
+  border-width: 2px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkBoxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkBoxContainer .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button {
+  background-color: #2D99EB; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.disabledButton {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.enabledButton  {
+  opacity: 1.0;
+}
+
+.tableMaterial {
+  width:'100%';
+}
+
+.tableWrapperMaterial {
+  overflow-x: 'auto';
+}
+
+.titleGreen {
+  background-color: #2EC55D;
+  height:10%;
+  width:100%;
+  border-radius: 12px;
+  text-align:center;
+  padding-left: 5px;
+  padding-right: 5px;
+ }
+
+ .titleRed {
+  background-color: #DE3630;
+  height:10%;
+  width:100%;
+  border-radius: 12px;
+  text-align:center;
+  padding-left: 5px;
+  padding-right: 5px;
+ }
+
+ .titleOrange {
+  background-color: #E77F25;
+  height:10%;
+  width:100%;
+  border-radius: 12px;
+  text-align:center;
+  padding-left: 5px;
+  padding-right: 5px;
+ }
+
+ .bigAvatar {
+  width: 60;
+  height: 60;
+}
+
+.tableRow{
+    &:nth-of-type(odd){
+      background-color: #f2f6f2;
+    }
+}
+
+.dashboardBox{
+  height:60%;
+  width:90%;
+  text-align:center;
+  padding: 40px 5px;
+  border: solid rgb(226, 226, 226);
+  border-width: 1px;
+  border-radius: 1px;
+}
+
+.errorDiv{
+  padding: 5px 20px;
+  margin: 5px;
+  margin-Bottom: 10px;
+  font-Size: 13;
+  border-Style: solid;
+  border-Width: 1px;
+  border-Radius: 5px;
+  color: #86181d;
+  background-Color: #ffdce0;
+  border-Color: rgba(27, 31, 35, 0.15);
+  text-Align: center;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+.dashboardText{
+  color: rgb(118, 120, 137)
+}
+
+.dashboardCountText{
+  color: black;
+  font-size: 18pt;
+}
+
+.dashboardLine{
+  height: 1px;
+  width: 20%;
+  color: rgb(58, 163, 236);
+  background-color: rgb(58, 163, 236);
+  border-width: 0px;
+  margin-top: 5%;
+}
+
+.tableCell{
+  margin-Right:'0px';
+  margin-Bottom:'0px';
+}
+
+.tableButtonEven{
+  background-Color:'#f2f6f2';
+  height:'100%';
+}
+
+.tableButtonEven{
+  background-Color:'#ffffff';
+  height:'100%';
+}
+
+.autocomplete-container {
+  border-bottom: honeydew;
+  border-left: honeydew;
+  border-right: honeydew;
+  border-top: 1px solid #e6e6e6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-radius: 0 0 2px 2px;
+}
+
+.suggestion-item {
+  padding: 8px;
+  text-align: left;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.suggestion-item--active {
+  background-color: #fafafa;
+}
